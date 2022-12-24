@@ -4,6 +4,8 @@ package com.example.demo.todo.dto;
 import com.example.demo.todo.entity.ToDo;
 import lombok.*;
 
+import java.util.Date;
+
 @Setter @Getter @ToString
 @NoArgsConstructor
 @AllArgsConstructor
@@ -11,7 +13,7 @@ import lombok.*;
 //이게 바로 entity.ToDo와의 차이
 public class TodoDto {
 
-    private long id;
+    private String id;
     private String title;
     private boolean done;
 
@@ -20,5 +22,6 @@ public class TodoDto {
         this.id = toDo.getId();
         this.title = toDo.getTitle();
         this.done = toDo.isDone();
+
     }
 }
